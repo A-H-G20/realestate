@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Rotator with Caption</title>
+<style>
+  body { text-align: center; }
+  img { width: 700px; height: 500px; }
+  #caption {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+</style>
+</head>
+<body>
+
+<img src="img/smart homes.jpg" id="rotatingImage" alt="Rotating Image">
+<p id="caption">JL Real Estate offers</p> <!-- Caption paragraph -->
+
+<script>
+  var images = ["img/H2.jpg", "img/H3.webp", "img/H7.jpg", "img/H1.webp","img/J4.jpeg","img/J5.webp"]; // Add your image filenames here
+  var captions = [
+  "Step into the heart of contemporary elegance with this stunning living room. Featuring sleek lines, plush furnishings, and an abundance of natural light, this space is designed for both relaxation and entertainment. The open-plan layout seamlessly connects to the kitchen and dining area, creating a perfect environment for hosting gatherings or enjoying quiet evenings at home. Every detail, from the sophisticated color palette to the stylish decor, has been carefully curated to exude luxury and comfort.",
+  "Experience the ultimate in rest and relaxation in this beautifully appointed bedroom. The soft, neutral tones create a calming atmosphere, while the large windows invite plenty of natural light to brighten the space. High-quality finishes and modern fixtures add a touch of sophistication, making this bedroom a true sanctuary. The spacious layout includes ample storage, ensuring that your personal haven remains clutter-free and serene.",
+     "Discover the joy of cooking in this gourmet kitchen, equipped with top-of-the-line appliances and elegant countertops. The open design allows for seamless interaction with guests while preparing meals, making it an entertainer’s dream. Custom cabinetry provides plenty of storage space, and the large island offers additional workspace and seating. Whether you are a culinary enthusiast or prefer simple meals, this kitchen is sure to inspire your inner chef.",
+    "Indulge in the spa-like ambiance of this luxurious bathroom. Featuring a deep soaking tub, a spacious walk-in shower, and double vanity sinks, this bathroom is designed for relaxation and rejuvenation. High-end materials such as marble and polished chrome add a touch of opulence, while thoughtful touches like underfloor heating and ambient lighting enhance the overall experience. Every moment spent here will feel like a retreat into tranquility.",
+    "Enjoy the great outdoors in style with this scenic patio. Perfect for alfresco dining or simply unwinding after a long day, this outdoor space offers both comfort and beauty. The well-designed layout includes comfortable seating areas, lush landscaping, and stunning views, making it an ideal spot for entertaining or enjoying a quiet moment of solitude. With plenty of space for outdoor furniture and decor, you can easily customize this area to suit your personal style.",
+    "Boost your productivity in this state-of-the-art home office. Designed with functionality and style in mind, this workspace features ample desk space, ergonomic seating, and plenty of natural light. Built-in shelving and storage solutions help keep everything organized and within reach, while modern technology integrations ensure you stay connected and efficient. Whether you work from home full-time or need a quiet place to focus, this office provides the perfect environment for success."
+  ]; // Add your captions here
+  var index = 0;
+
+  function changeImage() {
+    var imgElement = document.getElementById('rotatingImage');
+    var captionElement = document.getElementById('caption');
+    imgElement.src = images[index];
+    captionElement.innerText = captions[index];
+    index = (index + 1) % images.length;
+  }
+
+  setInterval(changeImage, 4000); // Change image every 4 seconds
+</script>
+
+</body>
+</html>

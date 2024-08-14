@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+background-image: url('ds5.jpg');
+    position: absolute;
+
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color:bisque;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color:violet;
+}
+.checked {
+    color: orange;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   
+  body {
+    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+  }
+   
+  .card {
+    max-width: 300px;
+    background: #fff;
+    margin: 2px;
+    padding:2px ;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+  }
+   
+  .star {
+    cursor: pointer;
+  }
+   
+  .one {
+    color: rgb(255, 0, 0);
+  }
+   
+  .two {
+    color: rgb(255, 106, 0);
+  }
+   
+  .three {
+    color: rgb(251, 255, 120);
+  }
+   
+  .four {
+    color: rgb(255, 255, 0);
+  }
+   
+  .five {
+    color: rgb(24, 159, 14);
+  }

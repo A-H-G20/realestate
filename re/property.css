@@ -1,0 +1,13 @@
+.container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: Arial, sans-serif;
+  }
+  
+  #infoImage {
+    width: 100px;
+    cursor: pointer;
+  }
+  
